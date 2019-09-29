@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10% 85% 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    grid-column:span 10;
+    background-color: black;
+    box-shadow: 0 4px 3px #ccc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 20px;
+}
+
+header .primary-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .primary-nav a {
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+header .primary-nav a:hover {
+    text-decoration: none;
+}
+
+aside {
+    grid-column: span 2;
+    border: 1px solid black;
+    padding: 20px;
+    overflow-x: scroll;
+}
+
+main {
+    grid-column: span 8;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+footer {
+    grid-column: span 10;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-nav a {
+    margin: 0 20px 0 20px;
+}
+
+.secondary-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.clist-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.clist-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.clist-li {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.clist-btn {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
